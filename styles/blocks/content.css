@@ -1,0 +1,43 @@
+.projects__title {
+  font-family: "Archivo Black";
+  font-size: clamp(28px, 4vw, 40px);
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.project-card__image {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  background-image: url("../images/project1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.project-card__image {
+  position: relative;
+}
+
+.project-card__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6));
+}
+
+.card__title {
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.card__description {
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+}
