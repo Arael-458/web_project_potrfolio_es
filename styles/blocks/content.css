@@ -8,24 +8,49 @@
 .projects__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
+  gap: 40px;
 }
-.project-card__image {
-  aspect-ratio: 16 / 9;
-  width: 100%;
-  background-image: url("../images/project1.jpg");
-  background-size: cover;
-  background-position: center;
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background: #111;
+  border-radius: 12px;
+  overflow: hidden;
+  transition:
+    0.2s ease,
+    box-shadow 0.2s ease;
 }
 
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
 .project-card__image {
   position: relative;
+  background-image: url(../../Images/img/cafeteria.jpg);
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  max-width: 100%;
 }
 
 .project-card__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6));
+  background: rgba(0, 0, 0, 0.65);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.project-card__content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .card__title {
@@ -39,5 +64,36 @@
   font-family: "Open Sans";
   font-size: 18px;
   font-weight: 400;
+  line-height: 1.6;
   color: #ffffff;
+}
+
+.project-card__icons {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  display: flex;
+  gap: 8px;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+
+.project-card__icons img {
+  width: 28px;
+  height: 28px;
+}
+
+.project-card__links a:hover {
+  opacity: 0.7;
+}
+
+.project-card:hover .project-card__overlay {
+  opacity: 1;
+}
+
+.project-card:hover .project-card__icons {
+  opacity: 1;
+  transform: translateY(0);
 }

@@ -1,3 +1,27 @@
+.header {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.header__hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.header__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 800px;
+  gap: 24px;
+}
 .header__name {
   font-family: "Archivo Black";
   font-size: clamp(40px, 6vw, 72px);
@@ -20,10 +44,31 @@
   line-height: 1.6;
   color: #ffffff;
 }
+.header__image {
+  margin-top: 40px;
+}
+.header__image img {
+  width: 387px;
+  height: 500px;
+  object-fit: cover;
+}
 
 .header__skills-title {
   font-family: "Archivo Black";
   font-size: clamp(28px, 4vw, 40px);
   line-height: 1.2;
   color: #ffffff;
+}
+
+.header__skills {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+
+.header__skills-icons {
+  width: 50px;
+  height: auto;
 }
