@@ -1,8 +1,4 @@
 @media (max-width: 1023px) {
-  .header__hero {
-    flex-direction: column;
-  }
-
   .projects__grid {
     grid-template-columns: 1fr;
   }

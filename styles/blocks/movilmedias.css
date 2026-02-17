@@ -21,4 +21,12 @@
     align-items: center;
     text-align: center;
   }
+
+  .header__hero {
+    flex-direction: column;
+  }
+
+  .header__image {
+    order: -1;
+  }
 }
