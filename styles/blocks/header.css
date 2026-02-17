@@ -3,7 +3,7 @@
   padding-bottom: 80px;
   background:
     radial-gradient(
-      circle 600px at 75% 35%,
+      circle 700px at calc(50% + 200px) 120px,
       rgba(109, 109, 255, 0.45) 0%,
       transparent 70%
     ),
@@ -52,9 +52,14 @@
   color: #ffffff;
 }
 
+.link,
+.hero-link {
+  cursor: pointer;
+}
+
 .hero-links {
   display: flex;
-  gap: 32px; /* separacion entre enlaces */
+  gap: 32px;
   margin-top: 24px;
 }
 
@@ -74,7 +79,6 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 2px;
   background: linear-gradient(to right, #4c1a97, #6d6dff);
   height: 5px;
 }
@@ -87,7 +91,8 @@
   margin-top: 40px;
 }
 .header__image img {
-  width: 387px;
+  max-width: 387px;
+  width: 100%;
   height: 500px;
   object-fit: cover;
 }

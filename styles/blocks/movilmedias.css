@@ -1,0 +1,24 @@
+@media (max-width: 767px) {
+  .footer__circle {
+    width: 220px;
+    height: 220px;
+  }
+  .footer__social {
+    gap: 32px;
+  }
+
+  .hero-links {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .header__image img {
+    width: 100%;
+    height: 280px;
+  }
+
+  .header__info {
+    align-items: center;
+    text-align: center;
+  }
+}

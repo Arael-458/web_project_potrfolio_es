@@ -8,7 +8,7 @@
   </head>
   <body class="page">
     <header class="header">
-      <div class="header__container">
+      <div class="container header__container">
         <div class="header__hero">
           <div class="header__info">
             <h1 class="header__name">Daniel <br />Sánchez</h1>
@@ -26,25 +26,20 @@
               y aprovechar oportunidades para crecer como desarrollador.
             </p>
             <div class="hero-links">
-               <a href="#" class="hero-link">
-                  Descargar CV
+              <a href="#" class="hero-link"> Descargar CV </a>
+
+              <a href="https://github.com/Arael-458" class="hero-link">
+                Enlace a GitHub
               </a>
 
-                <a href="#" class="hero-link">
-                  Enlace a GitHub
-                </a>
-
-                <a href="#contacto" class="hero-link">
-                  Hablemos
-                </a>
+              <a href="#contact" class="hero-link"> Hablemos </a>
             </div>
-
           </div>
 
           <div class="header__image">
             <img
               src="./Images/img/2CA1172E-80FB-4796-9B70-F98B2AABC27F.JPG"
-              alt="imagen de perfil"
+              alt="Foto de perfil de Daniel Sánchez"
             />
           </div>
         </div>
@@ -53,32 +48,32 @@
           <img
             class="header__skills-icons"
             src="./Images/Iconos/Group 120570.svg"
-            alt=""
+            alt="Ícono de HTML"
           />
           <img
             class="header__skills-icons"
             src="./Images/Iconos/Group 2087326844.svg"
-            alt=""
+            alt="Ícono de CSS"
           />
           <img
             class="header__skills-icons"
             src="./Images/Iconos/Group 120568.svg"
-            alt=""
+            alt="Ícono de JavaScript"
           />
           <img
             class="header__skills-icons"
             src="./Images/Iconos/Group 2087326846.svg"
-            alt=""
+            alt="Ícono de Git"
           />
           <img
             class="header__skills-icons"
             src="./Images/Iconos/Group 2087326847.svg"
-            alt=""
+            alt="Ícono de GitHub"
           />
           <img
             class="header__skills-icons"
             src="./Images/Iconos/Group 2087326848.svg"
-            alt=""
+            alt="Ícono de ChatGPT"
           />
         </div>
       </div>
@@ -86,62 +81,120 @@
 
     <main class="content">
       <section class="projects">
-        <h2 class="projects__title">Proyectos destacados</h2>
-        <div class="projects__grid">
-          <article class="project-card">
-            <div class="project-card__image">
-              
-              <div class="project-card__overlay"></div>
-              <div class="project-card__icons">
-                <img src="./Images/Iconos/Group 120570.svg" alt="HTML" />
-                <img src="./Images/Iconos/Group 2087326844.svg" alt="CSS" />
+        <div class="container main__container">
+          <h2 class="projects__title">Proyectos destacados</h2>
+          <div class="projects__grid">
+            <article class="project-card">
+              <div class="project-card__image">
+                <div class="project-card__overlay"></div>
+                <div class="project-card__icons">
+                  <img
+                    src="./Images/Iconos/Group 120570.svg"
+                    alt="Ícono de HTML"
+                  />
+                  <img
+                    src="./Images/Iconos/Group 2087326844.svg"
+                    alt="Ícono de CSS"
+                  />
+                </div>
               </div>
-            </div>
 
-              
-              
-              <h3 class="card__title">Página web de una cafetería</h3>
-              <p class="card__description">
-                Desarrollo de una landing page responsiva para una cafetería
-                siguiendo un brief de diseño. Incluye estructura semántica,
-                maquetación con Flexbox, creación de secciones nuevas y un
-                formulario de contacto funcional.Logro: Implementé desde cero el
-                diseño completo de la página, organicé el proyecto con buenas
-                prácticas y publiqué la versión final utilizando GitHub Pages.
-              </p>
-             
-              
+              <div class="project-card__content">
+                <h3 class="card__title">Página web de una cafetería</h3>
+                <p class="card__description">
+                  Desarrollo de una landing page responsiva para una cafetería
+                  siguiendo un brief de diseño. Incluye estructura semántica,
+                  maquetación con Flexbox, creación de secciones nuevas y un
+                  formulario de contacto funcional. Logro: Implementé desde cero
+                  el diseño completo de la página, organicé el proyecto con
+                  buenas prácticas y publiqué la versión final utilizando GitHub
+                  Pages.
+                </p>
 
-              <div class="project-card__links">
-                <a href="#" class="link">
-                  <img src="./Images/Iconos/Social Icons/Union.svg" alt="">
-                  Demo en vivo
-                </a>
-                <a href="#" class="link">
-                  <img src="./Images/Iconos/Group 2087326847.svg" alt="">
-                  GitHub
-                </a>
+                <div class="project-card__links">
+                  <a
+                    href="https://arael-458.github.io/web_project_coffeeshop_es/"
+                    class="link"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <img
+                      src="./Images/Iconos/Social Icons/Union.svg"
+                      alt="Ver demo en vivo"
+                    />
+                    Demo en vivo
+                  </a>
+                  <a
+                    href="https://github.com/Arael-458/web_project_coffeeshop_es"
+                    class="link"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <img
+                      src="./Images/Iconos/Group 2087326847.svg"
+                      alt="Ver repositorio en GitHub"
+                    />
+                    GitHub
+                  </a>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-     <div class="footer__circle">
-      <h2 class="footer__title">Contacto</h2>
-      <p class="footer__email">danielss_98@hotmail.com</p>
+    <footer class="footer" id="contact">
+      <div class="container footer__container">
+        <div class="footer__circle">
+          <h2 class="footer__title">Contacto</h2>
+          <a href="mailto:danielss_98@hotmail.com" class="footer__email"
+            >danielss_98@hotmail.com</a
+          >
 
-    <div class="footer__social">
-      <img src="./Images/Iconos/Social Icons/LinkedIn/Negative.svg" alt="LinkedIn">
-      <img src="./Images/Iconos/Social Icons/Facebook/Negative.svg" alt="Facebook">
-      <img src="./Images/Iconos/Social Icons/Instagram/Negative.svg" alt="Instagram">
-      <img src="./Images/Iconos/Social Icons/X (Twitter)/Negative.svg" alt="X">
-    </div>
-  </div>
-</footer>
+          <div class="footer__social">
+            <a
+              href="https://www.linkedin.com/in/daniel-s%C3%A1nchez-0b4057125/"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="./Images/Iconos/Social Icons/LinkedIn/Negative.svg"
+                alt="LinkedIn"
+              />
+            </a>
 
+            <a
+              href="https://www.facebook.com/dniel.daniel.5"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="./Images/Iconos/Social Icons/Facebook/Negative.svg"
+                alt="Facebook"
+              />
+            </a>
+
+            <a
+              href="https://www.instagram.com/danielss_98/"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="./Images/Iconos/Social Icons/Instagram/Negative.svg"
+                alt="Instagram"
+              />
+            </a>
+
+            <a href="https://x.com/Arael45" target="_blank" rel="noopener">
+              <img
+                src="./Images/Iconos/Social Icons/X (Twitter)/Negative.svg"
+                alt="X"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
