@@ -7,26 +7,46 @@
     gap: 32px;
   }
 
+  .header {
+    background:
+      radial-gradient(
+        circle 500px at center 80px,
+        rgba(109, 109, 255, 0.35) 0%,
+        transparent 70%
+      ),
+      #000;
+  }
+
   .hero-links {
+    align-self: flex-start;
     flex-direction: column;
+    text-align: left;
     gap: 16px;
+    align-items: flex-start;
   }
 
   .header__image img {
     width: 100%;
-    height: 280px;
+    max-width: 320px;
+    height: auto;
+    object-fit: contain;
   }
 
   .header__info {
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
   }
 
   .header__hero {
     flex-direction: column;
+    align-items: flex-start;
   }
 
   .header__image {
+    margin: 40px auto 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     order: -1;
   }
 }

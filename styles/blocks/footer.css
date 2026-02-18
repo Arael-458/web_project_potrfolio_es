@@ -1,9 +1,9 @@
 .footer {
   position: relative;
   padding: 120px 0;
-
   background: #050510;
   overflow: hidden;
+  isolation: isolate;
 }
 
 .footer__container {
@@ -14,13 +14,16 @@
   content: "";
   position: absolute;
   inset: 0;
+  margin: auto;
+  width: 600px;
+  height: 600px;
+
   background: radial-gradient(
-    circle 900px at center,
-    rgba(109, 109, 255, 0.45) 0%,
-    rgba(76, 26, 151, 0.25) 40%,
-    transparent 75%
+    circle,
+    rgba(109, 109, 255, 0.12) 0%,
+    rgba(76, 26, 151, 0.08) 40%,
+    transparent 55%
   );
-  pointer-events: none;
   z-index: 0;
 }
 

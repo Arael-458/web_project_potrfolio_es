@@ -2,7 +2,28 @@
   .projects__grid {
     grid-template-columns: 1fr;
   }
+
+  .header__hero {
+    align-items: center;
+  }
+
+  .header__info {
+    max-width: 60%;
+  }
   .hero-links {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    gap: 16px;
+  }
+  .header__image img {
+    width: 320px;
+    height: 420px;
+    object-fit: cover;
+  }
+
+  .header__image {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    flex-shrink: 0;
   }
 }
